@@ -85,7 +85,7 @@
 									</div>
 								</div>
 							</li>
-							{% endif %}
+							{% endif %}#}
 							<li class="nav-item {% if page.menu.category == "help" %}active{% endif %} dropdown">
 								<a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false" >
 									<span class="nav-link-icon d-md-none d-lg-inline-block">
@@ -98,12 +98,6 @@
 								<div class="dropdown-menu {% if page.menu.category == "help" %}show{% endif %}">
 									<div class="dropdown-menu-columns">
 										<div class="dropdown-menu-column">
-											<a class="dropdown-item {% if page.menu.category == "help" and page.menu.item == "documentation" %}active{% endif %}" href="{{ path('app_help_documentation') }}">
-												Documentation
-											</a>
-											<a class="dropdown-item {% if page.menu.category == "help" and page.menu.item == "licence" %}active{% endif %}" href="{{ path('app_help_licence') }}">
-												License
-											</a>
 											<a class="dropdown-item {% if page.menu.category == "help" and page.menu.item == "sourcecode" %}active{% endif %}" href="https://github.com/antedebaas/viesti-reports">
 												Source Code
 											</a>
@@ -113,6 +107,6 @@
 										</div>
 									</div>
 								</div>
-							</li> #}
+							</li>
 						</ul>
 					</div>

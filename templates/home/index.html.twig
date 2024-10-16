@@ -1,5 +1,8 @@
 {% extends 'base/page.html.twig' %}
 
 {% block body %}
-	Documentation coming soon
+	{% apply markdown_to_html %}
+		{% include page.template %}
+	{% endapply %}
 {% endblock %}
+

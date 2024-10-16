@@ -32,6 +32,7 @@ class HomeController extends AbstractController
                 ),
                 'pretitle' => $this->translator->trans("Home"),
                 'title' => $this->translator->trans("Documentation"),
+                'template' => "sample/markdown.md",
                 'actions' => array(),
             ),
             'breadcrumbs' => array(array('name' => $this->translator->trans("Home"), 'url' => $this->router->generate('app_home'))),
