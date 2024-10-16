@@ -32,6 +32,24 @@ class HomeController extends AbstractController
                 ),
                 'pretitle' => $this->translator->trans("Home"),
                 'title' => $this->translator->trans("Documentation"),
+                'template' => "documentation/readme.md",
+                'actions' => array(),
+            ),
+            'breadcrumbs' => array(array('name' => $this->translator->trans("Home"), 'url' => $this->router->generate('app_home'))),
+        ]);
+    }
+
+    #[Route('/samplemd', name: 'app_samplemd')]
+    public function samplemd(): Response
+    {
+        return $this->render('home/index.html.twig', [
+            'page' => array(
+                'menu' => array(
+                    'category' => 'home',
+                    'item' => 'dashboard'
+                ),
+                'pretitle' => $this->translator->trans("Home"),
+                'title' => $this->translator->trans("Documentation"),
                 'template' => "sample/markdown.md",
                 'actions' => array(),
             ),
