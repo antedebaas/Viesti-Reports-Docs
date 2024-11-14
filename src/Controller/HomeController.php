@@ -21,9 +21,13 @@ class HomeController extends AbstractController
     }
 
 
-    #[Route('/', name: 'app_home')]
-    public function index(): Response
+    #[Route('/{page}', name: 'app_home')]
+    public function index(string $page = null): Response
     {
+        if (!$page) {
+            $page = "readme";
+        }
+            
         return $this->render('home/index.html.twig', [
             'page' => array(
                 'menu' => array(
@@ -32,7 +36,7 @@ class HomeController extends AbstractController
                 ),
                 'pretitle' => $this->translator->trans("Home"),
                 'title' => $this->translator->trans("Documentation"),
-                'template' => "documentation/readme.md",
+                'template' => "documentation/".$page.".md",
                 'actions' => array(),
             ),
             'breadcrumbs' => array(array('name' => $this->translator->trans("Home"), 'url' => $this->router->generate('app_home'))),

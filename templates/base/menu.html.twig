@@ -12,6 +12,16 @@
 									</span>
 								</a>
 							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{{ path('app_home', { page: "licence" } ) }}" >
+									<span class="nav-link-icon d-md-none d-lg-inline-block">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-copyright"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M14 9.75a3.016 3.016 0 0 0 -4.163 .173a2.993 2.993 0 0 0 0 4.154a3.016 3.016 0 0 0 4.163 .173" /></svg>
+									</span>
+									<span class="nav-link-title">
+										License
+									</span>
+								</a>
+							</li>
 							{# <li class="nav-item dropdown {% if page.menu.category == "reports" %}active{% endif %}">
 								<a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false" >
 									<span class="nav-link-icon d-md-none d-lg-inline-block">
@@ -95,14 +105,16 @@
 										Help
 									</span>
 								</a>
-								<div class="dropdown-menu {% if page.menu.category == "help" %}show{% endif %}">
+								<div class="dropdown-menu show">
 									<div class="dropdown-menu-columns">
 										<div class="dropdown-menu-column">
 											<a class="dropdown-item {% if page.menu.category == "help" and page.menu.item == "sourcecode" %}active{% endif %}" href="https://github.com/antedebaas/viesti-reports">
 												Source Code
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-external-link mx-2 text-muted"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
 											</a>
 											<a class="dropdown-item {% if page.menu.category == "help" and page.menu.item == "sponsor" %}active{% endif %}" href="https://github.com/sponsors/antedebaas">
 												Sponsor
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-external-link mx-2 text-muted"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
 											</a>
 										</div>
 									</div>
